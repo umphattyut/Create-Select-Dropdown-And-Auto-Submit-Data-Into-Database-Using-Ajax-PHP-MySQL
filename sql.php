@@ -43,7 +43,7 @@ if(isset($_GET['updateSelect'])) {
 
 // Select Data From Another Table to be the Select-Option values
 $sqlSelect = "SELECT * FROM `tbl_select`";
-// Loop through $result and display messages
+// Loop data from $sqlSelect and display messages
 $query = $mysqli->query($sqlSelect);
 if($query->num_rows> 0){
     // We don't echo here
